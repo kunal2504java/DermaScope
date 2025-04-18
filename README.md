@@ -1,34 +1,53 @@
-# Skin Cancer Detection using Deep CNN
+A deep learning-powered diagnostic tool that classifies 7 types of skin diseases from dermoscopic images using Convolutional Neural Networks and Transfer Learning (MobileNetV2).
+.
 
-![Home Page Screenshot](screenshots/ss1.png)
-![Take a test Screenshot](screenshots/ss2.png)
+📌 Project Description
+DermaScope is a skin disease detection system that helps classify dermatoscopic images into seven distinct categories:
 
+Actinic Keratoses
 
-Skin Cancer Detection project is a sophisticated web application developed to detect skin cancer utilizing advanced deep learning techniques.
+Basal Cell Carcinoma
 
-## Features
+Benign Keratosis-like Lesions
 
-- User account creation and authentication system.
-- Test conducting functionality for users.
-- Ability to share test results with doctors.
-- Viewing test history.
-- Integration of React and Tailwind CSS for frontend development.
-- Utilization of Express for backend implementation.
-- Connection to MongoDB for data storage.
-- Training of predictive model using TensorFlow and Keras for skin cancer detection.
+Dermatofibroma
 
-## Installation
+Melanoma
 
-1. Install Node.js, Python & Git on your local machine.
+Melanocytic Nevi
 
-2. Clone the repository to your local machine:
-```sh
-git clone https://github.com/karantolani/skin-cancer-detection.git
-```
-3. The steps to run server is mentioned in the respective folder.
+Vascular Lesions
 
-## Visual Aid
+It leverages the power of TensorFlow/Keras, computer vision, and pretrained models to accurately predict skin conditions, potentially aiding early diagnosis.
 
-![High Level Design](screenshots/diagram.png)
-![Test Results 1](screenshots/ss4.png)
-![Test Results 2](screenshots/ss3.png)
+🔍 Features
+🧠 CNN + Transfer Learning: Uses MobileNetV2 or a custom CNN for image classification
+
+📊 Visualization: Displays prediction confidence for top classes
+
+🌐 REST API: A Flask API for real-time prediction through an endpoint
+
+🧼 Dataset Cleaning: Automatically removes corrupted or invalid images before training
+
+📁 Directory-based Training: Uses ImageDataGenerator with augmentation
+
+📷 Batch Prediction: Processes multiple test images in one go
+
+🛠️ Tech Stack
+Python 3.7+
+
+TensorFlow / Keras
+
+OpenCV, PIL
+
+Flask (for REST API)
+
+Matplotlib, NumPy
+
+MobileNetV2 (Pretrained on ImageNet)
+
+Backend 
+Node.js
+
+Frontend
+HTML , CSS , React 
